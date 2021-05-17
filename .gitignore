@@ -1,4 +1,4 @@
 .vs
-.user
+*.user
 bin
 obj
