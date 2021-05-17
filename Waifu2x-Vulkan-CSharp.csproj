@@ -1,0 +1,154 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+    <RootNamespace>Waifu2x_Vulkan_CSharp</RootNamespace>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Include="bin\Debug\net5.0\Std.cs" />
+    <Compile Include="bin\Debug\net5.0\Waifu2x.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="bin\Debug\net5.0\Std-symbols.cpp" />
+    <None Include="bin\Debug\net5.0\Waifu2x-symbols.cpp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="CppSharp" Version="0.11.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="models\models-cunet\noise0_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise0_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise0_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise0_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise1_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise1_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise1_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise1_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise2_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise2_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise2_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise2_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise3_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise3_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise3_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\noise3_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-cunet\scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise0_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise0_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise1_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise1_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise2_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise2_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise3_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\noise3_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_anime_style_art_rgb\scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise0_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise0_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise1_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise1_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise2_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise2_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise3_scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\noise3_scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\scale2.0x_model.bin">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="models\models-upconv_7_photo\scale2.0x_model.param">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="vcomp140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Waifu2x-Vulkan-Library.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>
