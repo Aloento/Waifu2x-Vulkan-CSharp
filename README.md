@@ -1,15 +1,16 @@
 # Waifu2x-Vulkan-CSharp
 
-Waifu2x-Vulkan-Library的C#使用范例
+`Waifu2x-Vulkan-Library`的C#使用范例  
+即开即用版：https://github.com/Aloento/YourWaifu2x
 
 ## 关于
 
-本范例是**Waifu2x-Vulkan-Library**的一部分  
+本范例是 **Waifu2x-Vulkan-Library** 的一部分  
 参考本范例前请先确保已经完成前序步骤  
 https://github.com/Aloento/Waifu2x-Vulkan-Library
 
 ## 导出表
-我们可以在 wrapper.h 中看到会被导出的函数  
+我们可以在 `wrapper.h` 中看到会被导出的函数  
 ```c++
 Waifu2xWrapper();
 void setInput(path_t input);
