@@ -15,20 +15,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Include="bin\Debug\net5.0\Std.cs" />
-    <Compile Include="bin\Debug\net5.0\Waifu2x.cs" />
+    <Compile Remove="bin\**" />
+    <EmbeddedResource Remove="bin\**" />
+    <None Remove="bin\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="bin\Debug\net5.0\Std-symbols.cpp" />
-    <None Include="bin\Debug\net5.0\Waifu2x-symbols.cpp" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <PackageReference Include="CppSharp" Version="0.11.2" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <None Update="libWaifu2x.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="models\models-cunet\noise0_model.bin">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -143,10 +138,16 @@
     <None Update="models\models-upconv_7_photo\scale2.0x_model.param">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="origin.jpg">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="vcomp140.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="Waifu2x-Vulkan-Library.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Waifu2x_Vulkan_Library.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
