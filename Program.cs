@@ -1,4 +1,6 @@
-﻿namespace Waifu2x_Vulkan_CSharp
+using System;
+
+namespace Waifu2x_Vulkan_CSharp
 {
     class Program
     {
@@ -9,7 +11,7 @@
             waifu2x.setNoise(2);
             waifu2x.setScale(2);
             waifu2x.setOutput("output.png");
-            waifu2x.execute();
+            Console.WriteLine(waifu2x.execute() == 0 ? "Successful" : "Failed");
             waifu2x.Dispose();
         }
     }
